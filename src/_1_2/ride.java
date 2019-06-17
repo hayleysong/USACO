@@ -1,7 +1,7 @@
 /*
- * ID: hayleys1
- * LANG: java
- * TASK: ride
+ID: hayleys1
+LANG: JAVA
+TASK: ride
  */
 package _1_2;
 
