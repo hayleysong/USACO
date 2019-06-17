@@ -43,7 +43,7 @@ public class template {
 	}
 	
 	private static void init() {
-		//Get data
+		//Get data from input file
 		//Initialize Input Variables
 	}
 	
