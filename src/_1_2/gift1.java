@@ -34,7 +34,7 @@ public class gift1 {
 			result = solve();
 
 			// Write out file
-			out.println(result);
+			out.print(result);
 
 			out.close();
 			in.close();
@@ -58,6 +58,7 @@ public class gift1 {
 
 	private static String solve() {
 		// Process and Output
+		
 		for (int i = 0; i < NP; i++) {
 			
 			String giver = in.nextLine();
@@ -85,15 +86,8 @@ public class gift1 {
 			}
 		}
 
-		Iterator it = list.keySet().iterator();
-        while(it.hasNext()) {
-            String key = it.next().toString();
-            int value = list.get(key);
-
-            result += key + " " + value;
-
-            if(it.hasNext())
-                result += "\n";
+		for(String s: list.keySet()) {
+			result += s + " " + list.get(s) + "\n";
 		}
 		return result;
 	}
