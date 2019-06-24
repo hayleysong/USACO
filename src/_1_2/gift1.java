@@ -12,11 +12,8 @@ public class gift1 {
 
 	static Scanner in;
 	static PrintWriter out;
-	static String inFile = "gift1.in";
-	static String outFile = "gift1.out";
 
 	// static StringBuilder result;
-	static String result = "";
 
 	// Input Variables
 	static LinkedHashMap<String, Integer> list;
@@ -27,14 +24,13 @@ public class gift1 {
 		try {
 
 			// Initialize in & out
-			in = new Scanner(new File(inFile));
-			out = new PrintWriter(new File(outFile));
+			in = new Scanner(new File("gift1.in"));
+			out = new PrintWriter(new File("gift1.out"));
 
 			init();
-			result = solve();
 
 			// Write out file
-			out.print(result);
+			out.print(solve());
 
 			out.close();
 			in.close();
@@ -57,6 +53,7 @@ public class gift1 {
 	}
 
 	private static String solve() {
+		String result = "";
 		// Process and Output
 		
 		for (int i = 0; i < NP; i++) {

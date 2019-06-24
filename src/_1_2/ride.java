@@ -12,11 +12,8 @@ public class ride {
 
 	static Scanner in;
 	static PrintWriter out;
-	static String inFile = "ride.in";
-	static String outFile = "ride.out";
 	
 	//static StringBuilder result;
-	static String result = "";
 	
 	//Input Variables
 	static String [] list;
@@ -26,14 +23,13 @@ public class ride {
 		try {
 			
 			//Initialize in & out
-			in = new Scanner(new File(inFile));
-			out = new PrintWriter(new File(outFile));
+			in = new Scanner(new File("ride.in"));
+			out = new PrintWriter(new File("ride.out"));
 			
 			init();
-			result = solve();
 			
 			//Write out file
-			out.println(result);
+			out.println(solve());
 			
 			out.close();
 			in.close();
@@ -56,6 +52,7 @@ public class ride {
 	
 	private static String solve() {
 		//Process and Output
+		String result = "";
 		
 		if(convert(list[0]) == convert(list[1])) 
 			result = "GO";
