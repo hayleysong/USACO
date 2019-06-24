@@ -31,7 +31,7 @@ public class template {
 			result = solve();
 			
 			//Write out file
-			out.println(result);
+			out.print(result);
 			
 			out.close();
 			in.close();
