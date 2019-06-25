@@ -77,12 +77,12 @@ public class beads {
 		boolean flag = false;
 		int idx = i + 1;
 		int count = 2;
-		//System.out.print(idx + " : ");
+		System.out.print(idx + " : ");
 
 		while (count < N) {
 
 			char curr = necklace.charAt(idx);
-			//System.out.print(curr);
+			System.out.print(curr);
 
 			if (!flag) {
 				if (curr == c || curr == 'w')
@@ -98,7 +98,7 @@ public class beads {
 			idx++;
 
 		}
-		//System.out.print("[" + count + "]\n");
+		System.out.print("[" + count + "]\n");
 		return count;
 	}
 
