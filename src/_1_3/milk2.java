@@ -3,7 +3,7 @@ ID: hayleys1
 LANG: JAVA
 TASK: milk2
  */
-package _1_2;
+package _1_3;
 
 import java.io.File;
 import java.io.PrintWriter;
