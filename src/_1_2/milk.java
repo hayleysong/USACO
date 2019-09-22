@@ -5,11 +5,11 @@
  */
 package _1_2;
 
-import java.util.*;
+import java.io.File;
+import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.Scanner;
 
-import _1_3.milk2.milking;
-
-import java.io.*;
 
 public class milk {
 
@@ -73,6 +73,7 @@ public class milk {
 			String [] temp = in.nextLine().split(" ");
 			farmers[i] = new milks(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]));
 		}
+		Arrays.sort(farmers);
 	}
 
 	private static String solve() {
